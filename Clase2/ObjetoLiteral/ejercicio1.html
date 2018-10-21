@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+Ejercicio 1 - Objeto Literal
+  </body>
+
+
+
+<script type="text/javascript">
+
+// Ejercicio 1
+var persona = {
+edad:27,
+nombre:"Sebastian",
+apellido:"Badaro",
+sexo:"M",
+estadocivil:"S",
+películas:["Pulp Fiction","The Witch"],
+estatura:169, //Ejercicio 4
+saludo:function () {console.log("hola soy Seba");}, //Ejercicio 5
+comiendo:function (comida) {console.log("hola estoy comiendo "+comida);} //Ejercicio 5
+}
+//Ejercicio 2
+console.log(persona);
+
+//Ejercicio 3
+persona.edad=28;
+console.log(persona);
+console.log(persona.saludo());
+console.log(persona.comiendo('fideos'));
+
+</script>
+
+</html>
