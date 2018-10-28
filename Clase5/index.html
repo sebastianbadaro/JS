@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action="​http://google.com.ar" method="post">
+      <input type="submit" id="submit" value="Enviar">
+    </form>
+
+    <button id="saludador" type="button" name="button">Saludar</button>
+    <button id="cambiafondo" type="button" name="button">Cambiar fondo</button>
+    <br>
+    <img id="image"src="https://i.redd.it/4skcofasa1p01.png" alt="" style="width: 500px">
+    <br>
+    <img id="image2"src="https://pics.me.me/is-not-father-l1-on-is-god-is-the-holy-31903236.png" alt="" style="width: 500px">
+  </body>
+</html>
+
+
+<script type="text/javascript">
+
+window.onload = function functionName() {
+ document.getElementById("saludador").addEventListener("click", function(){ alert("Hola !")});
+
+var myvar = setInterval(function() {
+  alert("jelou");
+  clearInterval(myvar);
+},1000)
+
+myvar2 = setInterval(function() {
+  alert("jelou2");
+  clearInterval(myvar2);
+},500)
+
+ document.getElementById("cambiafondo").addEventListener("click", function(){ document.body.style.background='green'});
+ // document.addEventListener("click", function(){ document.body.style.background='red'});
+ document.getElementById("image").addEventListener("mouseover", function(){ console.log("Estoy viendo la imagen")});
+ document.getElementById("image2").addEventListener("click", function(event){ alert("Click en la imagen !")
+console.log("X coords: " + event.clientX + ", Y coords: " + event.clientY);
+});
+ document.getElementById("submit").addEventListener("click", function(event){
+
+   alert("No se puede!");
+   event.preventDefault();
+ });
+
+}
+
+
+</script>
